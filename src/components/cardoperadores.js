@@ -1,15 +1,5 @@
 /** @jsx jsx */
 import { jsx, css } from "@emotion/core";
-import arrowgreen from "../img/arrowgreen.svg";
-import arrownext from "../img/arrownext.svg";
-import movistar from "../img/movistar.png";
-import entel from "../img/entel.png";
-import claro from "../img/claro.png";
-import wom from "../img/wom.png";
-import AliceCarousel from "react-alice-carousel";
-import vtr from "../img/vtr.png";
-import virgin from "../img/virgin.png";
-import simple from "../img/simple.png";
 import { Link } from "react-router-dom";
 
 function CardOperadores(props) {

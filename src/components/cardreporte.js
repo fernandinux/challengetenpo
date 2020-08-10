@@ -1,6 +1,5 @@
 /** @jsx jsx */
 import { jsx, css } from "@emotion/core";
-import arrowgreen from "../img/arrowgreen.svg";
 import arrownext from "../img/arrownext.svg";
 import coin from "../img/coin.svg";
 import { Link } from "react-router-dom";
@@ -65,10 +64,11 @@ function Cardreporte(props) {
           css={css`
             margin: 0px 5px;
             width: 180px;
+            display: flex;
           `}
         >
           {coins.map((coin, index) => {
-            return coin;
+            return <div key={index}>{coin}</div>;
           })}
         </div>
 

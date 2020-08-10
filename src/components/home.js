@@ -1,6 +1,5 @@
 /** @jsx jsx */
 import { jsx, css } from "@emotion/core";
-import React from "react";
 import home1 from "../img/home1.png";
 import pagodsc from "../img/pagodecuentas.png";
 import recargas from "../img/recargas.png";

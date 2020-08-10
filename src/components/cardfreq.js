@@ -2,7 +2,6 @@
 import { jsx, css } from "@emotion/core";
 import arrowgreen from "../img/arrowgreen.svg";
 import arrownext from "../img/arrownext.svg";
-import movistar from "../img/movistar.png";
 import { Link } from "react-router-dom";
 
 function Cardfreq(props) {

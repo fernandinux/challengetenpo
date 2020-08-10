@@ -1,6 +1,5 @@
 /** @jsx jsx */
 import { jsx, css } from "@emotion/core";
-
 import movil from "../img/movil.svg";
 import tv from "../img/tv.svg";
 import wan from "../img/wan.svg";
@@ -19,26 +18,7 @@ function NewRecargar() {
     width: 360px;
     margin: 0 auto;
   `;
-  const header = css`
-    height: 34px;
-    margin: 0;
-    padding: 15px 24px;
-    background: white;
-    display: flex;
-  `;
-  const headertxt = css`
-    margin-left: 10px;
-    h3 {
-      font-size: 12px;
-      margin: 0px;
-      font-style: normal;
-      color: #595959;
-      font-weight: lighter;
-    }
-    b {
-      font-weight: bold;
-    }
-  `;
+
   const title = css`
     margin: 0 auto;
   `;
@@ -129,11 +109,11 @@ function NewRecargar() {
           </div>
         </div>
 
-        <AliceCarousel autoPlay autoPlayInterval="3000">
-          <img src={image1} css={sliderimg} />
-          <img src={image2} css={sliderimg} />
-          <img src={image3} css={sliderimg} />
-          <img src={image4} css={sliderimg} />
+        <AliceCarousel autoPlay autoPlayInterval={2000}>
+          <img src={image1} css={sliderimg} alt="beneficio" />
+          <img src={image2} css={sliderimg} alt="beneficio" />
+          <img src={image3} css={sliderimg} alt="beneficio" />
+          <img src={image4} css={sliderimg} alt="beneficio" />
         </AliceCarousel>
       </div>
     </div>

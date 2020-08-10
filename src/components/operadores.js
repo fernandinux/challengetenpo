@@ -12,35 +12,13 @@ import wom1 from "../img/wom1.png";
 import simple1 from "../img/simple1.png";
 import virgin1 from "../img/virgin1.png";
 import "react-alice-carousel/lib/alice-carousel.css";
-import { Link } from "react-router-dom";
 import Header from "./header";
-import RegRecarga from "./regrecarga";
 import CardOperadores from "./cardoperadores";
 
 function Operadores() {
   const content = css`
     width: 360px;
     margin: 0 auto;
-  `;
-  const header = css`
-    height: 34px;
-    margin: 0;
-    padding: 15px 24px;
-    background: white;
-    display: flex;
-  `;
-  const headertxt = css`
-    margin-left: 10px;
-    h3 {
-      font-size: 12px;
-      margin: 0px;
-      font-style: normal;
-      color: #595959;
-      font-weight: lighter;
-    }
-    b {
-      font-weight: bold;
-    }
   `;
   const title = css`
     margin: 0 auto;
@@ -64,29 +42,6 @@ function Operadores() {
     margin: 10px 60px;
     height: 250px;
     width: auto;
-  `;
-  const card = css`
-    background: white;
-    display: flex;
-    border-radius: 10px;
-    width: 120px;
-    padding: 13px;
-    justify-content: space-around;
-    margin-right: 10px;
-    align-items: center;
-    margin-bottom: 8px;
-    h3 {
-      font-size: 11px;
-      color: #595959;
-      margin: 0px;
-      font-weight: normal;
-    }
-  `;
-  const icon = css`
-    width: 26px;
-    height: 26px;
-    padding: 0px;
-    border-radius: 100%;
   `;
 
   return (
@@ -115,10 +70,10 @@ function Operadores() {
           <div css={subtitle}>
             <p>Promociones para recargas:</p>
           </div>
-          <AliceCarousel autoPlay autoPlayInterval="3000">
-            <img src={wom1} css={sliderimg} />
-            <img src={simple1} css={sliderimg} />
-            <img src={virgin1} css={sliderimg} />
+          <AliceCarousel autoPlay autoPlayInterval={2000}>
+            <img src={wom1} css={sliderimg} alt="operador" />
+            <img src={simple1} css={sliderimg} alt="operador" />
+            <img src={virgin1} css={sliderimg} alt="operador" />
           </AliceCarousel>
         </div>
       </div>

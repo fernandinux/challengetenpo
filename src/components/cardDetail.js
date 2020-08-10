@@ -1,17 +1,7 @@
 /** @jsx jsx */
 import { jsx, css } from "@emotion/core";
-import arrowgreen from "../img/arrowgreen.svg";
-import arrownext from "../img/arrownext.svg";
-import coin from "../img/coin.svg";
-import { Link } from "react-router-dom";
 
 function CardDetail(props) {
-  const icon = css`
-    width: 37px;
-    border-radius: 50%;
-    height: 37px;
-    padding: 0px;
-  `;
   const card = css`
     background: white;
     display: flex;

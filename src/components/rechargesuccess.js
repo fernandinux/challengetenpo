@@ -1,20 +1,10 @@
 /** @jsx jsx */
 import { jsx, css } from "@emotion/core";
-import arrowback from "../img/Arrowleft.svg";
-import movistar from "../img/movistar.png";
-import entel from "../img/entel.png";
-import cge from "../img/cge.png";
-import vtr from "../img/vtr.png";
-import Cardfreq from "./cardfreq";
 import check from "../img/checkgreen.svg";
-import AliceCarousel from "react-alice-carousel";
 import boleta from "../img/boleta.png";
 import share from "../img/share.svg";
 import boton from "../img/botonfqt.png";
 import botongreen from "../img/botonfqtgreen.png";
-import "react-alice-carousel/lib/alice-carousel.css";
-import { Formik, Form, Field } from "formik";
-import * as Yup from "yup";
 import { Link } from "react-router-dom";
 import NumberFormat from "react-number-format";
 import { useState } from "react";
@@ -24,7 +14,7 @@ import DataInvoice from "./datainvoice";
 
 function RechargeSuccess() {
   const [active, setActive] = useState(false);
-  const [number, setNumber] = useState(10000);
+  const number = 10000;
   const icon = css`
     width: 58px;
     height: 33px;
@@ -35,26 +25,7 @@ function RechargeSuccess() {
     width: 360px;
     margin: 0 auto;
   `;
-  const header = css`
-    height: 34px;
-    margin: 0;
-    padding: 15px 24px;
-    background: white;
-    display: flex;
-  `;
-  const headertxt = css`
-    margin-left: 10px;
-    h3 {
-      font-size: 12px;
-      margin: 0px;
-      font-style: normal;
-      color: #595959;
-      font-weight: lighter;
-    }
-    b {
-      font-weight: bold;
-    }
-  `;
+
   const title = css`
     margin: 8px auto;
     color: white;
@@ -68,39 +39,6 @@ function RechargeSuccess() {
     position: relative;
   `;
 
-  const fieldStyle = css`
-    width: 312px;
-    border: none;
-    background: none;
-    font-size: 20px;
-    height: 24px;
-    margin-bottom: 60px;
-    border-bottom: 1px solid #595959;
-    -webkit-appearance: none;
-    -moz-appearance: textfield;
-  `;
-  const formStyle = css`
-    margin: 50px 0px 100px 0px;
-  `;
-  const buttonHover = css`
-    color: white;
-    width: 312px;
-    border-radius: 10px;
-    background: #00baa4;
-    height: 56px;
-    border: none;
-    font-size: 14px;
-  `;
-  const buttonStyle = css({
-    color: "#adadad",
-    width: "312px",
-    borderRadius: "10px",
-    background: "none",
-    height: "56px",
-    border: "1px solid #adadad",
-    fontsize: "14px",
-    "&:hover,&:focus": buttonHover,
-  });
   const numberStyle = css`
     color: #00baa4;
     font-size: 30px;

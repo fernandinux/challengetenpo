@@ -1,6 +1,5 @@
 /** @jsx jsx */
 import { jsx, css } from "@emotion/core";
-import arrowback from "../img/Arrowleft.svg";
 import movistar from "../img/movistar.png";
 import entel from "../img/entel.png";
 import cge from "../img/cge.png";
@@ -13,33 +12,12 @@ import image2 from "../img/image2.png";
 import image3 from "../img/image3.png";
 import image4 from "../img/image4.png";
 import "react-alice-carousel/lib/alice-carousel.css";
-import { Link } from "react-router-dom";
 import Header from "./header";
 
 function FreqOper() {
   const content = css`
     width: 360px;
     margin: 0 auto;
-  `;
-  const header = css`
-    height: 34px;
-    margin: 0;
-    padding: 15px 24px;
-    background: white;
-    display: flex;
-  `;
-  const headertxt = css`
-    margin-left: 10px;
-    h3 {
-      font-size: 12px;
-      margin: 0px;
-      font-style: normal;
-      color: #595959;
-      font-weight: lighter;
-    }
-    b {
-      font-weight: bold;
-    }
   `;
   const title = css`
     margin: 0 auto;
@@ -116,11 +94,11 @@ function FreqOper() {
           src={services}
           alt="services"
         />
-        <AliceCarousel autoPlay autoPlayInterval="3000">
-          <img src={image1} css={sliderimg} />
-          <img src={image2} css={sliderimg} />
-          <img src={image3} css={sliderimg} />
-          <img src={image4} css={sliderimg} />
+        <AliceCarousel autoPlay autoPlayInterval={2000}>
+          <img src={image1} css={sliderimg} alt="beneficios" />
+          <img src={image2} css={sliderimg} alt="beneficios" />
+          <img src={image3} css={sliderimg} alt="beneficios" />
+          <img src={image4} css={sliderimg} alt="beneficios" />
         </AliceCarousel>
       </div>
     </div>
