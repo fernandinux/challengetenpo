@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx, css } from "@emotion/core";
 import check from "../img/checkgreen.svg";
-
+import boleta from "../img/boleta.png";
 import share from "../img/share.svg";
 import boton from "../img/botonfqt.png";
 import botongreen from "../img/botonfqtgreen.png";
@@ -48,6 +48,7 @@ function RechargeSuccess() {
     border: none;
     background: none;
   `;
+  const files = [{ boleta }];
   const onShare = () => {
     /* Mostramos la opcion nativa de compartir si se navega desde Android */
     if (navigator.userAgent.match(/Android/i)) {
@@ -55,8 +56,8 @@ function RechargeSuccess() {
       navigator
         .share({
           title: "Ticket de pago",
-          //
           url: "https://i.imgur.com/ogZhmJc.png",
+          file: files,
         })
         .then(console.log("Share successful"));
     } else {
@@ -80,6 +81,7 @@ function RechargeSuccess() {
   const activefqt = () => {
     setActive(!active);
   };
+
   return (
     <div css={content}>
       <Header redirect="/freqoper" />
