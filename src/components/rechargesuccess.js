@@ -55,8 +55,8 @@ function RechargeSuccess() {
       /* Use the Web Share API from Chrome 61+ */
       navigator
         .share({
-          title: "Ticket de pago",
-          url: "https://i.imgur.com/ogZhmJc.png",
+          title: 'Ticket de pago',
+          url: 'https://i.imgur.com/ogZhmJc.png',
           file: files,
         })
         .then(console.log("Share successful"));
