@@ -1,7 +1,6 @@
 /** @jsx jsx */
 import { jsx, css } from "@emotion/core";
 import check from "../img/checkgreen.svg";
-import boleta from "../img/boleta.png";
 import share from "../img/share.svg";
 import boton from "../img/botonfqt.png";
 import botongreen from "../img/botonfqtgreen.png";
@@ -57,7 +56,6 @@ function RechargeSuccess() {
         .share({
           title: 'Ticket de pago',
           url: 'https://i.imgur.com/ogZhmJc.png',
-          file: files,
         })
         .then(console.log("Share successful"));
     } else {
