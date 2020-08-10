@@ -55,7 +55,8 @@ function RechargeSuccess() {
       navigator
         .share({
           title: "Ticket de pago",
-          file: [`${boleta}`],
+          //
+          url: "https://i.imgur.com/ogZhmJc.png",
         })
         .then(console.log("Share successful"));
     } else {
