@@ -47,7 +47,7 @@ function RechargeSuccess() {
     border: none;
     background: none;
   `;
-  const files = [{ boleta }];
+  
   const onShare = () => {
     /* Mostramos la opcion nativa de compartir si se navega desde Android */
     if (navigator.userAgent.match(/Android/i)) {
